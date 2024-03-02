@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-02 06:16:02 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA2OjA3OjU2ICI7Mjc1Nw=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA2OjE2OjAyICI7MTsyODU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <if expression="numero&gt;=1 &amp;&amp; numero&lt;=7">
+                <then>
+                    <if expression="numero&gt;=2 &amp;&amp; numero&lt;=6">
+                        <then>
+                            <output expression="&quot;Dia util&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Final de semana&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;insira um n&#250;mero de 1 a 7&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
