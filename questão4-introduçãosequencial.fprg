@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-02 04:33:31 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA0OjAxOjUwICI7Mjc0Mw=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA0OjMzOjMxICI7NDsyODU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1" type="Integer" array="False" size=""/>
+            <declare name="valor2" type="Integer" array="False" size=""/>
+            <declare name="temp" type="Integer" array="False" size=""/>
+            <input variable="valor1"/>
+            <input variable="valor2"/>
+            <assign variable="temp" expression="valor1"/>
+            <assign variable="valor1" expression="valor2"/>
+            <assign variable="valor2" expression="temp"/>
+            <output expression="&quot;o valor trocado &#233;:valor A agora &#233; &quot; &amp; valor1 &amp; &quot;o valor b agora &#233;: &quot; &amp; valor2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
