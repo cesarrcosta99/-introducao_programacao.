@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-02 07:40:17 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA2OjM3OjIxICI7Mjc1Mg=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA3OjQwOjE3ICI7NDsyODYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade, peso, gota" type="Integer" array="False" size=""/>
+            <input variable="idade"/>
+            <input variable="peso"/>
+            <if expression="idade &gt;=12 &amp;&amp; peso &gt;=60">
+                <then>
+                    <output expression="&quot;Deve tomar 40 gotas&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="idade &gt;=12 &amp;&amp; peso &lt; 60">
+                        <then>
+                            <output expression="&quot;deve tomar 30 gotas.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="idade &lt; 12">
+                                <then>
+                                    <assign variable="gota" expression="peso /2"/>
+                                    <output expression="&quot;Deve tomar &quot; &amp; gota &amp;  &quot;gotas&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
