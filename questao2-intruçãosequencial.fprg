@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-02 04:16:24 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA0OjAxOjUwICI7Mjc0Mw=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA0OjE2OjI0ICI7MjsyODU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1" type="Integer" array="False" size=""/>
+            <declare name="valor2" type="Integer" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <input variable="valor1"/>
+            <input variable="valor2"/>
+            <assign variable="media" expression="(valor1 * 0.40 + valor2 * 0.60)/ 1"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
