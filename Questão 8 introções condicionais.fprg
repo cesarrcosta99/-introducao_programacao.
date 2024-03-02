@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-02 06:36:13 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA2OjIwOjMxICI7Mjc0NQ=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA2OjM2OjEzICI7MTsyODYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <if expression="numero&gt;=1 &amp;&amp; numero&lt;=10">
+                <then>
+                    <output expression="&quot;Alimenta&#231;&#227;o&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numero&gt;=11 &amp;&amp; numero&lt;=20">
+                        <then>
+                            <output expression="&quot;Limpeza&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="numero&gt;=21 &amp;&amp; numero&lt;=30">
+                                <then>
+                                    <output expression="&quot;Eletr&#244;nicos&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
