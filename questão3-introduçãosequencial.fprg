@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-02 04:23:01 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA0OjAxOjUwICI7Mjc0Mw=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA0OjIzOjAxICI7MzsyODUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1" type="Integer" array="False" size=""/>
+            <declare name="valor2" type="Integer" array="False" size=""/>
+            <declare name="valor3" type="Integer" array="False" size=""/>
+            <declare name="mediaponderada" type="Real" array="False" size=""/>
+            <input variable="valor1"/>
+            <input variable="valor2"/>
+            <input variable="valor3"/>
+            <assign variable="mediaponderada" expression="(valor1 * 4 + valor2 * 7 + valor3 * 3) /14"/>
+            <output expression="mediaponderada" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
