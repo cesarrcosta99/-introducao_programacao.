@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-02 07:09:29 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA2OjM3OjIxICI7Mjc1Mg=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA3OjA5OjI5ICI7MzsyODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2, numero3" type="Integer" array="False" size=""/>
+            <input variable="numero1"/>
+            <input variable="numero2"/>
+            <input variable="numero3"/>
+            <if expression="numero1 &lt; numero2&lt; numero3">
+                <then>
+                    <output expression="&quot;Os n&#250;meros est&#227;o em ordem crescente&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numero1 &gt; numero2 &gt; numero3">
+                        <then>
+                            <output expression="&quot;Os n&#250;meros est&#227;o em ordem decrescente&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Os numeros est&#227;o fora de ordem&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
