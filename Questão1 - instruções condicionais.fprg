@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-02 06:03:15 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA0OjAxOjUwICI7Mjc0Mw=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA2OjAzOjE1ICI7NTsyODYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <if expression="numero&gt;=1 &amp;&amp; numero &lt;=7">
+                <then>
+                    <if expression="numero = 1">
+                        <then>
+                            <output expression="&quot;Domingo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Numero=2">
+                                <then>
+                                    <output expression="&quot;Segunda-Feira&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="Numero=3">
+                                        <then>
+                                            <output expression="&quot;Ter&#231;a-Feira&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="numero=4">
+                                                <then>
+                                                    <output expression="&quot;Quarta-Feira&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="numero=5">
+                                                        <then>
+                                                            <output expression="&quot;Quinta-Feira&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="numero=6">
+                                                                <then>
+                                                                    <output expression="&quot;Sexta-Feira&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="numero=7">
+                                                                        <then>
+                                                                            <output expression="&quot;Sabado&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else/>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Escreva um n&#250;mero de 1 a 7&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
