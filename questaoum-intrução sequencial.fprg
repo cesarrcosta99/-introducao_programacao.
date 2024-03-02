@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-02 04:09:40 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA0OjAxOjUwICI7Mjc0Mw=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDI7IjA0OjA5OjQwICI7MTsyODU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Valorum" type="Integer" array="False" size=""/>
+            <declare name="Valordois" type="Integer" array="False" size=""/>
+            <declare name="media" type="Integer" array="False" size=""/>
+            <input variable="Valorum"/>
+            <input variable="Valordois"/>
+            <assign variable="media" expression="(Valorum + Valordois) / 2"/>
+            <output expression="&quot;o valor da media &#233; &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
