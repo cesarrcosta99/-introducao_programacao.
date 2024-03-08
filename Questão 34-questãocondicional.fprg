@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-08 10:21:39 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDg7IjA4OjA2OjA4ICI7Mjc2MQ=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMDg7IjEwOjIxOjM5ICI7NDsyODY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario" type="Real" array="False" size=""/>
+            <input variable="salario"/>
+            <if expression="salario &lt; 1903.99">
+                <then>
+                    <output expression="&quot;Isento&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="salario &lt; 2826.66">
+                        <then>
+                            <output expression="&quot;imposto:&quot; &amp; salario * 0.075" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="salario &lt; 3751.06">
+                                <then>
+                                    <output expression="&quot;imposto:&quot; &amp; salario * 0.15" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="salario &lt; 4468.69">
+                                        <then>
+                                            <output expression="&quot;imposto:&quot; &amp; salario * 0.225" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;imposto:&quot; &amp; salario * 0.275" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
