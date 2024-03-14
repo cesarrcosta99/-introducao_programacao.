@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-14 08:08:26 "/>
+        <attribute name="created" value="YXN1cztBU1VTUEM7MjAyNC0wMy0wNjsiMDU6MzA6MTIgIjsyMDkw"/>
+        <attribute name="edited" value="YXN1cztBU1VTUEM7MjAyNC0wMy0wNjsiMDU6Mzg6MzQgIjs0OzIyMTM="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTQ7IjA4OjA4OjI2ICI7MTsyODY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor, parteFracionada" type="Real" array="False" size=""/>
+            <declare name="parteInteira" type="Integer" array="False" size=""/>
+            <input variable="valor"/>
+            <assign variable="parteInteira" expression="valor"/>
+            <assign variable="parteFracionada" expression="valor - parteInteira"/>
+            <output expression="parteFracionada" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
