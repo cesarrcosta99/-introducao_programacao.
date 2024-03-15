@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-15 06:40:21 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA1OjUxOjE2ICI7Mjc1NQ=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA2OjQwOjIxICI7NDsyODYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1, valor2, valor3" type="Integer" array="False" size=""/>
+            <input variable="valor1"/>
+            <input variable="valor2"/>
+            <input variable="valor3"/>
+            <if expression="valor1 &gt; valor2 and valor1&gt; valor3">
+                <then>
+                    <output expression="&quot;O maior n&#250;mero &#233;: &quot; &amp; valor1" newline="True"/>
+                    <if expression="valor2 &lt; valor3">
+                        <then>
+                            <output expression="&quot;O menor n&#250;mero &#233;: &quot; &amp; valor2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;O menor n&#250;mero &#233;: &quot; &amp; valor3" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="valor2 &gt; valor1 and valor2 &gt; valor3">
+                        <then>
+                            <output expression="&quot;O maior n&#250;mero &#233;: &quot; &amp; valor2" newline="True"/>
+                            <if expression="valor1 &lt; valor3">
+                                <then>
+                                    <output expression="&quot;O menor n&#250;mero &#233;: &quot; &amp; valor1" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;O menor n&#250;mero &#233;: &quot; &amp; valor3" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;O maior n&#250;mero &#233;: &quot; &amp; valor3" newline="True"/>
+                            <if expression="valor1 &lt; valor2">
+                                <then>
+                                    <output expression="&quot;O menor n&#250;mero &#233;: &quot; &amp; valor1" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;O menor n&#250;mero &#233;: &quot; &amp; valor2" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

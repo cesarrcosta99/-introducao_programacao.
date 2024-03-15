@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-15 06:16:22 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA1OjUxOjE2ICI7Mjc1NQ=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA2OjE2OjIyICI7MjsyODYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor" type="Integer" array="False" size=""/>
+            <input variable="valor"/>
+            <if expression="valor &gt; 100">
+                <then>
+                    <assign variable="valor" expression="valor * 95/100"/>
+                    <output expression="valor" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;N&#227;o tem desconto,o valor ent&#227;o &#233; &quot; &amp; valor" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

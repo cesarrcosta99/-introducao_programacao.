@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-15 06:26:45 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA1OjUxOjE2ICI7Mjc1NQ=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA2OjI2OjQ1ICI7MzsyODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorProduto, valorFinal" type="Real" array="False" size=""/>
+            <input variable="valorProduto"/>
+            <if expression="valorProduto &lt; 20">
+                <then>
+                    <assign variable="valorFinal" expression="valorProduto * 140/100"/>
+                    <output expression="valorFinal" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="valorFinal" expression="valorProduto * 130/100"/>
+                    <output expression="valorFinal" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

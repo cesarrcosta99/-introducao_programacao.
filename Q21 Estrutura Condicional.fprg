@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-15 07:17:22 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA2OjUzOjI2ICI7Mjc1OQ=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA3OjE3OjIyICI7MTsyODY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1, valor2, valor3, contador" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="0"/>
+            <input variable="valor1"/>
+            <input variable="valor2"/>
+            <input variable="valor3"/>
+            <if expression="valor1&gt; 0">
+                <then>
+                    <assign variable="contador" expression="contador + 1"/>
+                    <if expression="valor2 &gt; 0">
+                        <then>
+                            <assign variable="contador" expression="contador + 1"/>
+                            <if expression="valor3 &gt; 0">
+                                <then>
+                                    <assign variable="contador" expression="contador + 1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="valor3 &gt; 0">
+                                <then>
+                                    <assign variable="contador" expression="contador + 1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="valor2 &gt; 0">
+                        <then>
+                            <assign variable="contador" expression="contador + 1"/>
+                            <if expression="valor3 &gt; 0">
+                                <then>
+                                    <assign variable="contador" expression="contador + 1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="valor3 &gt; 0">
+                                <then>
+                                    <assign variable="contador" expression="contador + 1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="contador" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
