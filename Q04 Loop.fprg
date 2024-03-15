@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-15 09:03:06 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA3OjQ5OjEzICI7Mjc2MQ=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA5OjAzOjA2ICI7NTsyODY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, i, j" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="numero &amp; &quot; X &quot; &amp; i &amp; &quot; = &quot; &amp; numero * i" newline="True"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+            <assign variable="j" expression="1"/>
+            <while expression="j &lt;= 10">
+                <output expression="numero &amp; &quot; X &quot; &amp; j  &amp; &quot; = &quot; &amp; numero * j" newline="True"/>
+                <assign variable="j" expression="j + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

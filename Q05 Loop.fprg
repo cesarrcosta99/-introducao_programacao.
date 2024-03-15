@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-15 09:34:00 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA3OjQ5OjEzICI7Mjc2MQ=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA5OjM0OjAwICI7NjsyODY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="100" direction="inc" step="1">
+                <if expression="i mod 3 = 0">
+                    <then>
+                        <if expression="i mod 5=0">
+                            <then>
+                                <output expression="&quot;Fizz e buzz&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Fizz&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="i mod 5 = 0">
+                            <then>
+                                <output expression="&quot;Buzz&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="i" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
