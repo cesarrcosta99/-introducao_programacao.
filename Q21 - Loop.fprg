@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-15 10:31:33 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjA4OjM1OjM5ICI7Mjc2NQ=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTU7IjEwOjMxOjMzICI7NDsyODU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantidade, numero, i, resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Quantos n&#250;meros voc&#234; vai comparar?&quot;" newline="True"/>
+            <input variable="quantidade"/>
+            <output expression="&quot;Digite os n&#250;meros&quot;" newline="True"/>
+            <input variable="numero"/>
+            <assign variable="resultado" expression="numero"/>
+            <for variable="i" start="2" end="quantidade " direction="inc" step="1">
+                <input variable="numero"/>
+                <if expression="resultado &gt; numero">
+                    <then>
+                        <assign variable="resultado" expression="numero"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;O menor n&#250;mero &#233;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
