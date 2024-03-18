@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-17 07:54:44 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTc7IjAzOjM4OjIxICI7Mjc1Ng=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTc7IjA3OjU0OjQ0ICI7MzsyODcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, soma" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="0"/>
+            <assign variable="soma" expression="0"/>
+            <output expression="&quot;Digite os n&#250;meros para fazer a soma&quot;" newline="True"/>
+            <while expression="numero &gt;= 0">
+                <input variable="numero"/>
+                <if expression="numero &gt; 0">
+                    <then>
+                        <assign variable="soma" expression="soma + numero"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
