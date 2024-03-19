@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 07:07:31 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTk7IjA2OjI3OjAwICI7Mjc1Ng=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTk7IjA3OjA3OjMxICI7MTsyODY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="soma, i, j" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <declare name="primo" type="Boolean" array="False" size=""/>
+            <for variable="i" start="2" end="50" direction="inc" step="1">
+                <assign variable="primo" expression="true"/>
+                <for variable="j" start="2" end="i - 1" direction="inc" step="1">
+                    <if expression="i % j = 0">
+                        <then>
+                            <assign variable="primo" expression="false"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="primo = true">
+                    <then>
+                        <assign variable="soma" expression="soma + i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Soma dos numeros primos de 1 a 50 &#233;: &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
