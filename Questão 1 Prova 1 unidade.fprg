@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 07:30:52 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTk7IjA2OjI3OjAwICI7Mjc1Ng=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTk7IjA3OjMwOjUyICI7MjsyODY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cateto1, cateto2, hip" type="Real" array="False" size=""/>
+            <input variable="cateto1"/>
+            <input variable="cateto2"/>
+            <assign variable="hip" expression="sqrt(cateto1 * cateto1 + cateto2 * cateto2)"/>
+            <output expression="&quot;A hipotenusa tri&#226;ngulo ret&#226;ngulo &#233;: &quot; &amp; hip * 100" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

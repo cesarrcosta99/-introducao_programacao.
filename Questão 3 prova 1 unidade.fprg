@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 09:02:47 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTk7IjA2OjI3OjAwICI7Mjc1Ng=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMTk7IjA5OjAyOjQ3ICI7NDsyODc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, quantidade" type="Integer" array="False" size=""/>
+            <declare name="soma, numero, menor, maior" type="Real" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <output expression="&quot;Informe a quantidade de n&#250;meros que ser&#225; comparado e somado&quot;" newline="True"/>
+            <input variable="quantidade"/>
+            <output expression="&quot;Escreva os N&#250;meros&quot;" newline="True"/>
+            <input variable="numero"/>
+            <assign variable="menor" expression="numero"/>
+            <assign variable="maior" expression="numero"/>
+            <assign variable="soma" expression="soma + numero"/>
+            <for variable="i" start="1" end="quantidade -1" direction="inc" step="1">
+                <input variable="numero"/>
+                <if expression="numero &lt; menor">
+                    <then>
+                        <assign variable="menor" expression="numero"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="numero &gt; maior">
+                    <then>
+                        <assign variable="maior" expression="numero"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="soma" expression="soma + numero"/>
+            </for>
+            <output expression="&quot;O menor n&#250;mero &#233; &quot; &amp; menor" newline="True"/>
+            <output expression="&quot;O maior n&#250;mero &#233; &quot; &amp; maior" newline="True"/>
+            <output expression="&quot;O soma dos n&#250;meros &#233; &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
