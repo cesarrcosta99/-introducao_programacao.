@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="isado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-14 10:13:59 "/>
+        <attribute name="created" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTQ7IjA3OjUzOjI0ICI7MjgxNg=="/>
+        <attribute name="edited" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTQ7IjEwOjEzOjU5ICI7MjsyOTIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Real" array="False" size=""/>
+            <assign variable="x" expression="3-((2^4)/((4^3-2)*5))"/>
+            <output expression="&quot;O valor de x &#233;: &quot; &amp; x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

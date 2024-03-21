@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="isado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-18 08:39:14 "/>
+        <attribute name="created" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTQ7IjEwOjAyOjM4ICI7MjgwOQ=="/>
+        <attribute name="edited" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTg7IjA4OjM5OjE0ICI7MjsyOTMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <declare name="peso" type="Real" array="False" size=""/>
+            <declare name="gotas" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe a idade do paciente.&quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;Informe o peso do paciente.&quot;" newline="True"/>
+            <input variable="peso"/>
+            <if expression="idade &gt; 12 and peso &gt; 60">
+                <then>
+                    <output expression="&quot;O paciente dever&#225; tomar 40 gotas do medicamento&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="idade &gt; 12 and peso &lt; 60">
+                        <then>
+                            <output expression="&quot;O paciente dever&#225; tomar 30 gotas do medicamento&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="gotas" expression="peso/2"/>
+                            <output expression="&quot;O paciente dever&#225; tomar &quot; &amp; gotas &amp; &quot; gotas.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

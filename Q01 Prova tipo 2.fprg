@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-21 06:52:19 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMjE7IjA2OjM1OjM3ICI7Mjc1OA=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMjE7IjA2OjUyOjE5ICI7MTsyODY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tempo, altura" type="Real" array="False" size=""/>
+            <input variable="tempo"/>
+            <assign variable="altura" expression="1/2 * 9.8 * tempo ^ 2"/>
+            <output expression="altura * 100" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

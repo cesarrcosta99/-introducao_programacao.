@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="isado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-18 08:35:33 "/>
+        <attribute name="created" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTQ7IjA5OjEyOjM2ICI7MjgxNg=="/>
+        <attribute name="edited" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTg7IjA4OjM1OjMzICI7MjsyOTMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Avelocidade, Aponto, Bvelocidade, Bponto, tempo" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o ponto incial do primeiro ve&#237;culo.&quot;" newline="True"/>
+            <input variable="Aponto"/>
+            <output expression="&quot;Agora informe sua velocidade.&quot;" newline="True"/>
+            <input variable="Avelocidade"/>
+            <output expression="&quot;Informe o ponto inicial do segundo ve&#237;culo.&quot;" newline="True"/>
+            <input variable="Bponto"/>
+            <output expression="&quot;Agora informe sua velocidade.&quot;" newline="True"/>
+            <input variable="Bvelocidade"/>
+            <assign variable="tempo" expression="(abs(Aponto-Bponto))/(Avelocidade+Bvelocidade)"/>
+            <output expression="&quot;O tempo de encontro entre os dois ve&#237;culos informados &#233; de &quot; &amp; tempo &amp; &quot;segundos.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

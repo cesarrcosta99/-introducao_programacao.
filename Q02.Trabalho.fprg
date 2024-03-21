@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="isado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-21 09:39:54 "/>
+        <attribute name="created" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTQ7IjA4OjI1OjQxICI7MjgxNQ=="/>
+        <attribute name="edited" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTQ7IjA5OjA0OjEyICI7MjsyOTIw"/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMjE7IjA5OjM5OjU0ICI7MTsyODcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Real" array="False" size=""/>
+            <assign variable="x" expression="(((5^3+6)^(1/4))/(abs(10-3*4)))*arccos(Log10((10^3)/(sin(pi/2))))"/>
+            <output expression="&quot;O valor de x &#233;: &quot; &amp; x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

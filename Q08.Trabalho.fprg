@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="isado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-21 10:35:16 "/>
+        <attribute name="created" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTg7IjA4OjE3OjEwICI7MjgxNg=="/>
+        <attribute name="edited" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTg7IjA4OjI4OjQwICI7MTsyOTI5"/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMjE7IjEwOjM1OjE2ICI7MTsyODU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade, i, soma18, soma65" type="Integer" array="False" size=""/>
+            <assign variable="soma18" expression="0"/>
+            <assign variable="soma65" expression="0"/>
+            <for variable="i" start="1" end="20" direction="inc" step="1">
+                <output expression="&quot;Informe uma idade&quot;" newline="True"/>
+                <input variable="idade"/>
+                <if expression="idade &lt; 18">
+                    <then>
+                        <assign variable="soma18" expression="soma18 + 1"/>
+                    </then>
+                    <else>
+                        <if expression="idade &gt; 65">
+                            <then>
+                                <assign variable="soma65" expression="soma65+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;O total de pessoas com menos de 18 anos &#233; de &quot; &amp;  soma18 &amp; &quot; e o total de pessoas com mais de 65 anos &#233; de &quot; &amp; soma65" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

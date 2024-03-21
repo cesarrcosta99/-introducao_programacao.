@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="isado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-18 08:38:12 "/>
+        <attribute name="created" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTQ7IjA5OjIyOjM1ICI7MjgxNg=="/>
+        <attribute name="edited" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTg7IjA4OjM4OjEyICI7NTsyOTMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dia, mes, ano" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe o dia.&quot;" newline="True"/>
+            <input variable="dia"/>
+            <output expression="&quot;Informe o m&#234;s.&quot;" newline="True"/>
+            <input variable="mes"/>
+            <output expression="&quot;Informe o ano.&quot;" newline="True"/>
+            <input variable="ano"/>
+            <if expression="mes &gt; 0 and mes &lt; 13">
+                <then>
+                    <if expression="mes=2 and dia &gt; 0 and dia &lt; 29">
+                        <then>
+                            <output expression="&quot;A data informada &#233; v&#225;lida.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="dia &gt;0 and dia &lt; 32 and (mes=1 or mes=3 or mes=5 or mes=7 or mes=8 or mes=10 or mes=12)">
+                                <then>
+                                    <output expression="&quot;A data informada &#233; v&#225;lida.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="dia &gt; 0 and dia &lt; 31 and (mes=4 or mes=6 or mes=9 or mes=11)">
+                                        <then>
+                                            <output expression="&quot;A data informada &#233; v&#225;lida.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;A data informada &#233; inv&#225;lida.&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;A data informada &#233; inv&#225;lida.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

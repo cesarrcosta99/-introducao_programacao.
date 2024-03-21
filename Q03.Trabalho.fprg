@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="isado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-14 09:12:31 "/>
+        <attribute name="created" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTQ7IjA5OjA2OjU5ICI7MjgyNA=="/>
+        <attribute name="edited" value="aXNhZG87REVTS1RPUC1KTTlURENWOzIwMjQtMDMtMTQ7IjA5OjEyOjMxICI7MTsyOTE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="altura, raio, volume" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o raio da base da caixa d'&#225;gua em metros&quot;" newline="True"/>
+            <input variable="raio"/>
+            <output expression="&quot;Agora informe a altura desta caixa d'&#225;gua, tamb&#233;m em metros.&quot;" newline="True"/>
+            <input variable="altura"/>
+            <assign variable="volume" expression="pi*raio^2*altura*1000"/>
+            <output expression="&quot;O volume em litros da caixa d'&#225;gua informada &#233; de  &quot; &amp; volume" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
