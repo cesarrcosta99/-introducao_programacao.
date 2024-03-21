@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-20 10:54:54 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMjA7IjA5OjMzOjUwICI7Mjc1Mw=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMjA7IjEwOjU0OjU0ICI7MzsyODYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, quantidadepositivo, quantidadenegativo" type="Integer" array="False" size=""/>
+            <declare name="numero, media, soma, porcentagemnp, porcentagemnn" type="Real" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <assign variable="quantidadepositivo" expression="0"/>
+            <assign variable="quantidadenegativo" expression="0"/>
+            <output expression="&quot;Digita os 20 numeros&quot;" newline="True"/>
+            <for variable="i" start="1" end="20" direction="inc" step="1">
+                <input variable="numero"/>
+                <assign variable="soma" expression="soma + numero"/>
+                <if expression="numero &gt; 0">
+                    <then>
+                        <assign variable="quantidadepositivo" expression="quantidadepositivo + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="numero &lt; 0">
+                    <then>
+                        <assign variable="quantidadenegativo" expression="quantidadenegativo + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="media" expression="soma / 20"/>
+            <assign variable="porcentagemnp" expression="(quantidadepositivo * 100) / 20"/>
+            <assign variable="porcentagemnn" expression="(quantidadenegativo * 100) / 20"/>
+            <output expression="&quot;A m&#233;dia aritmetica dos valores lidos &#233; : &quot; &amp; media" newline="True"/>
+            <output expression="&quot;A quantidade de valores positivos &#233;: &quot; &amp; quantidadepositivo" newline="True"/>
+            <output expression="&quot;A quantidade de valores negativos &#233;: &quot; &amp; quantidadenegativo" newline="True"/>
+            <output expression="&quot;A porcentagem de valores positivo &#233;: &quot; &amp; porcentagemnp &amp; &quot;%&quot;" newline="True"/>
+            <output expression="&quot;A porcentagem de valores negativo &#233;: &quot; &amp; porcentagemnn &amp; &quot;%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

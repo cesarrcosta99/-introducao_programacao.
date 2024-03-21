@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-20 10:04:31 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMjA7IjA5OjMzOjUwICI7Mjc1Mw=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMjA7IjEwOjA0OjMxICI7MjsyODUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="preco" type="Real" array="False" size=""/>
+            <input variable="preco"/>
+            <if expression="preco &lt; 20">
+                <then>
+                    <assign variable="preco" expression="preco * 140/100"/>
+                    <output expression="&quot;O valor final &#233;: &quot; &amp; preco" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="preco" expression="preco * 130/100"/>
+                    <output expression="&quot;O valor final &#233;: &quot; &amp; preco" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cesar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-20 09:59:23 "/>
+        <attribute name="created" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMjA7IjA5OjMzOjUwICI7Mjc1Mw=="/>
+        <attribute name="edited" value="Q2VzYXI7REVTS1RPUC1SNEpEMFZOOzIwMjQtMDMtMjA7IjA5OjU5OjIzICI7MTsyODY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qtAmigos" type="Integer" array="False" size=""/>
+            <declare name="distancia, consumo, preco, resultado" type="Real" array="False" size=""/>
+            <input variable="qtAmigos"/>
+            <input variable="distancia"/>
+            <input variable="consumo"/>
+            <input variable="preco"/>
+            <assign variable="resultado" expression="((distancia / consumo) * preco)/ qtAmigos"/>
+            <output expression="&quot;o valor em que cada um deve pagar pela viagem &#233;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
